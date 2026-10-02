@@ -1,0 +1,1 @@
+Embedding code directly into user-data means that the instance never needs Git or S3 credentials to fetch its own code because the code is already included when the instance starts.
