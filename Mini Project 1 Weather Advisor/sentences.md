@@ -24,7 +24,7 @@ An attacker who takes over the advisor tier gets access to the Gemini API key wh
 
 5. Explain in one sentence what a security group rule that names another security group as its source does that a CIDR range cannot.
 
-A security group rule that names another security group as its source allows traffic based on the identity of the instances rather than their IP addresses. So it automatically adapts when instances are added or removed without needing to update IP ranges.
+A security group rule that names another security group as its source allows traffic based on the identity of the instances rather than their IP addresses. So if the instances are replaced, the database access rule does not need to be updated with the new IP.
 
 ---
 
@@ -36,7 +36,7 @@ The 30 second pause exists to prevent a problem when all of the pending requests
 
 7. Write down one problem with a design where users never see an error and the only evidence is a log line that nobody reads.
 
-A problem wiht a design where users never seen an error is that users receive a silent fallback answer without knowing it's not from the AI. So they can't distinguish between an actual AI-generated suggestion and a generic rule-based one, which may lead to incorrect decisions.
+A problem with a design where users never see an error is that users receive a fallback answer without knowing that it's not from the AI. So this means that they cannot tell if the suggestion is coming from the AI or a generic rule-based one, which may lead to incorrect decisions.
 
 ---
 
