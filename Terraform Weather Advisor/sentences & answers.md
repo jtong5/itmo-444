@@ -114,11 +114,11 @@ It didn't make my application shorter since there are more files needed to make 
 
 # My cost estimate: 
 
-Start:   Sat Nov 7 02:49:03 UTC 2026
-Destroy: Sat Nov 7 04:25:02 UTC 2026
-Runtime: 1 hour 36 minutes
-Rate:    ~$0.07 per hour (ALB $0.03 + 2x t3.micro $0.02 + IPv4 $0.02 + EBS <$0.002)
-Cost:    1.60 x $0.07 = $0.11
+- Start:   Sat Nov 7 02:49:03 UTC 2026
+- Destroy: Sat Nov 7 04:25:02 UTC 2026
+- Runtime: 1 hour 36 minutes (1.6 hours)
+- Rate:    ~$0.07 per hour
+- Cost:    1.60 x $0.07 = $0.11
 
 Note:
 (The screenshot of 'delete verification cmds' shows left over security groups. The parent groups are deleted. This does not incur cost.)
